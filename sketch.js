@@ -44,11 +44,11 @@ function touchEnded() {
   //se invece il suono puntuale è già partito, controlla la posizione del mouse/touch
   //e se è nella parte sinistra assegna -1 alla variabile rotateDir
   //se è nella parte destra assegna 1 alla variabile rotateDir
-  else if (play==true) {
+  else if (play == true) {
 
-    if(mouseX < width/2){
+    if (mouseX < width / 2) {
       rotateDir = -1;
-    } else if(mouseX > width/2){
+    } else if (mouseX > width / 2) {
       rotateDir = 1;
     }
     // rotateDir = round(map(mouseX, 0, width, -1, 1));
@@ -57,7 +57,7 @@ function touchEnded() {
     //se la variabile rotateDir è uguale alla variabile panning allora l'utente
     //si è girato nella direzione giusta. Fa' partire il feedback "sparkly",
     //e fa' vibrare il cellulare
-    if(rotateDir==panning){
+    if (rotateDir == panning) {
       col = 255;
 
       sparklySound.play();
@@ -69,8 +69,7 @@ function touchEnded() {
 
 }
 
-//prova con la rotazione. Devo averla costruita male, perché non sempre mi prende
-//la rotazione al primo colpo
+//prova con la rotazione. Da sistemare
 
 // function deviceTurned() {
 //
