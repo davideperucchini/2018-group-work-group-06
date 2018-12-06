@@ -20,13 +20,18 @@ function setup() {
 }
 
 function draw() {
+
   background(0);
   fill(col);
   ellipse(width / 2, height / 2, 100, 100);
 }
 
+//quando si tocca lo schermo
 function touchEnded() {
   // panning = round(random(-1, 1));
+  //se il suono puntuale non è ancora partito, allora prendimi un valore
+  //che sia o 1 o -1 e assegnalo al panning, dopodiché fai partire il suono e cambia
+  //la variabile play
   if (play == false) {
     panning = random([-1, 1]);
     console.log('pan ' + panning);
@@ -36,6 +41,9 @@ function touchEnded() {
     col = 50;
     play = true;
   }
+  //se invece il suono puntuale è già partito, controlla la posizione del mouse/touch
+  //e se è nella parte sinistra assegna -1 alla variabile rotateDir
+  //se è nella parte destra assegna 1 alla variabile rotateDir
   else if (play==true) {
 
     if(mouseX < width/2){
@@ -45,6 +53,10 @@ function touchEnded() {
     }
     // rotateDir = round(map(mouseX, 0, width, -1, 1));
     console.log('rot ' + rotateDir);
+
+    //se la variabile rotateDir è uguale alla variabile panning allora l'utente
+    //si è girato nella direzione giusta. Fa' partire il feedback "sparkly",
+    //e fa' vibrare il cellulare
     if(rotateDir==panning){
       col = 255;
 
@@ -56,6 +68,9 @@ function touchEnded() {
   }
 
 }
+
+//prova con la rotazione. Devo averla costruita male, perché non sempre mi prende
+//la rotazione al primo colpo
 
 // function deviceTurned() {
 //
