@@ -14,10 +14,10 @@ var player
 var alpha
 var beta
 var gamma
-var level=1
+var level=0
 
 
-var goright=[0,0,0,0,0,0,0,0,0,0,0]
+var goright=[0,0,0,0,0,0,0]
 
 for(j=0;j<8;j++){
   var turn=(Math.floor(Math.random()*4))
@@ -26,7 +26,7 @@ for(j=0;j<8;j++){
   else if(turn==2){goright[j]=225}
   else if(turn==3){goright[j]=315}
 }
-console.log(goright)
+//console.log(goright)
 var ciao=0
 var ciaone=0
 var ciaoissimo=0
@@ -238,11 +238,11 @@ else{
 }}
 else{car3.amp(0)}
 
-
-text(level,100,300)
-text(goright[level],100,100)
-
-text(alpha,100,200)
+// 
+// text(level,100,300)
+// text(goright[level],100,100)
+//
+// text(alpha,100,200)
 
 if(mouseIsPressed){
   fill('white')
