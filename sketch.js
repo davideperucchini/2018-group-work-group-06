@@ -1,93 +1,87 @@
-var soundFile;
-var sparklySound;
-var ambientSound;
-var rotateDir;
-var panning;
-var col = 255;
-var play = false;
+var obstacles =[]
+var i=0;
+var alpha, beta, gamma
 
-function preload() {
-  soundFormats('mp3', 'ogg', 'wav');
-  soundFile = loadSound('assets/toy-sound.wav');
-  ambientSound = loadSound('assets/street-sound.wav');
-  sparklySound = loadSound('assets/sparkly.wav');
+function preload(){
+  // put preload code here
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  ambientSound.play();
-  ambientSound.amp(2.5);
+
+    createCanvas(windowWidth,windowHeight)
+  frameRate(30)
+
+  for(i=0;i<9;i++){obstacles[i]=new Obstacle()}
 }
 
 function draw() {
 
-  background(0);
-  fill(col);
-  ellipse(width / 2, height / 2, 100, 100);
-}
 
-//quando si tocca lo schermo
-function touchEnded() {
-  // panning = round(random(-1, 1));
-  //se il suono puntuale non è ancora partito, allora prendimi un valore
-  //che sia o 1 o -1 e assegnalo al panning, dopodiché fai partire il suono e cambia
-  //la variabile play
-  if (play == false) {
-    panning = random([-1, 1]);
-    console.log('pan ' + panning);
+  text("alpha: " + alpha, 25, 25);
+  text("beta: " + beta, 25, 50);
+  text("gamma: " + gamma, 25, 75)
 
-    soundFile.pan(panning);
-    soundFile.play();
-    col = 50;
-    play = true;
-  }
-  //se invece il suono puntuale è già partito, controlla la posizione del mouse/touch
-  //e se è nella parte sinistra assegna -1 alla variabile rotateDir
-  //se è nella parte destra assegna 1 alla variabile rotateDir
-  else if (play == true) {
+background(0)
 
-    if (mouseX < width / 2) {
-      rotateDir = -1;
-    } else if (mouseX > width / 2) {
-      rotateDir = 1;
-    }
-    // rotateDir = round(map(mouseX, 0, width, -1, 1));
-    console.log('rot ' + rotateDir);
+push()
+rotate(radians(alpha))
+    for(i=0;i<9;i++)
+      {
+      obstacles[i].update()}
 
-    //se la variabile rotateDir è uguale alla variabile panning allora l'utente
-    //si è girato nella direzione giusta. Fa' partire il feedback "sparkly",
-    //e fa' vibrare il cellulare
-    if (rotateDir == panning) {
-      col = 255;
+      pop()
+console.log(alpha)
 
-      sparklySound.play();
-      window.navigator.vibrate([500, 30, 50]);
-      soundFile.stop();
-      play = false;
-    }
-  }
+charachter()
+charachter.show
 
 }
 
-//prova con la rotazione. Da sistemare
+function Obstacle(){
+  this.type=Math.floor(i/3);
+  this.direction=random(1,-1)*this.type
+  this.aldo=width/2-(this.direction*(i*300))-(300*(i-this.type))
+  this.y=height-height/10-i*height/10
 
-// function deviceTurned() {
-//
-//   if (turnAxis === 'Y') {
-//     if(rotationY == -90){
-//        rotateDir = 1;
-//      } else if(rotationY == 90){
-//        rotateDir = -1;
-//      }
-//      // rotateDir = round(map(mouseX, 0, width, -1, 1));
-//      console.log('rot ' + rotateDir);
-//
-//     if(rotateDir==panning){
-//       sparklySound.play();
-//
-//       window.navigator.vibrate([500, 30, 50]);
-//       soundFile.stop();
-//       play = false;
-//     }
-//   }
-// }
+
+  this.speed=(this.direction*(5+(this.type*10)))+1
+
+  this.show=rect(this.aldo,this.y,width/10,height/10)
+
+  this.update=function update()
+    {
+      if(i==2||i==4){}
+    else{this.aldo=this.aldo+this.speed}
+
+    if(this.aldo<0){this.aldo=width}
+     else if(this.aldo>width){this.aldo=0}
+      rect(this.aldo,this.y,width/10,height/10)}
+
+}
+function charachter(){
+  this.show=polygon(width/2, height/2, 50, 3)
+}
+
+
+window.addEventListener('deviceorientation', function(e)
+{
+  alpha = e.alpha;
+  beta = e.beta;
+  gamma = e.gamma;
+})
+
+function windowResized() {
+  // resize canvas when switching into/from full screen
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+function polygon(x, y, radius, npoints) {
+  var angle = TWO_PI / npoints;
+  beginShape();
+  for (var a = 0; a < TWO_PI; a += angle) {
+    var sx = x + cos(a) * radius;
+    var sy = y + sin(a) * radius;
+    vertex(sx, sy);
+  }
+  endShape(CLOSE);
+}
