@@ -59,7 +59,7 @@ function preload(){
 
                     right=loadSound("./assets/right.mp3")
 
-backg=loadImage("./assets/risorsa 2.png")
+backg=loadImage("./assets/risorsa.png")
 noise=loadSound("./assets/tapetosonoro1.mp3")
 }
 
