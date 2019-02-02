@@ -1,6 +1,6 @@
 ![](Images/Slide-Title.png)
 
-**video**
+**gif**
 
 ## Contents
 - [Project Idea] (#projectidea)
@@ -30,7 +30,10 @@ We have chosen to contextualize the **journey in a city**, in an attempt to retu
 Among all the sounds of the city the user will therefore be forced to distinguish the **barking of the dog**, paying attention to everything that surrounds it: bicycles, passers-by and cars.
 Initially we thought to create a creepy sound experience that could be easily linked to a nightmare. We later abandoned the idea to avoid ridiculing the experience, encouraging an **audio editing as truthful as possible**.
 
+**video**
+
 ## The research <a name="research"></a>
+
 To better understand the context in which we experimented, we went to [Dialogo nel Buio](http://www.dialogonelbuio.org/index.php/it/), a **sensorial experience** managed by the Istituto dei Ciechi in Milan. It’s important to note that Dialogo nel Buio does not want to provide a simulation of blindness but rather to **show new ways of experiencing reality**. After the visit we gathered several reflections. In particular, we were accompanied by **anxiety, insecurity and bewilderment**.
 
 The research then moved on to the data.
@@ -87,6 +90,12 @@ The main difficulty was managing responsiveness, difficulty managed thanks to th
  
 Another difficult point was the animation of the buttons, initially designed from the png. In order to be freer in management, they were finally designed directly in CSS.
 
+## References <a name="references"></a>
+
+## Credits <a name="team"></a>
+
+
+![](Images/Slide-Skyline.png)
 
 ## Team members <a name="team"></a>
 *Dark Dreams* was developed by:
