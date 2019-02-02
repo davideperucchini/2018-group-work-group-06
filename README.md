@@ -3,16 +3,16 @@
 **gif**
 
 ## Contents
-- [Project Idea] (#projectidea)
-- [The research] (#research)
-- [Design challenges] (#designchallenges)
- * [Architecture] (#architecture)
- * [Visuals] (#visuals)
- * [Sounds] (#sounds)
- * [Interactions] (#interactions)
-- [Code challenges] (#codechallenges)
-- [Team members] (#team)
-- [Course] (#course)
+- [ Project Idea ] (#projectidea)
+- [ The research ] (#research)
+- [ Design challenges ] (#designchallenges)
+  * [ Architecture ] (#architecture)
+  * [ Visuals ] (#visuals)
+  * [ Sounds ] (#sounds)
+  * [ Interactions ] (#interactions)
+- [ Code challenges ] (#codechallenges)
+- [ Team members ] (#team)
+- [ Course ] (#course)
 
 ![](Images/Slide-Skyline.png)
 ## Project Idea <a name="projectidea"></a>
