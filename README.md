@@ -6,10 +6,10 @@
 - [Project Idea] (#projectidea)
 - [The research] (#research)
 - [Design challenges] (#designchallenges)
- - [Architecture] (#architecture)
- - [Visuals] (#visuals)
- - [Sounds] (#sounds)
- - [Interactions] (#interactions)
+ * [Architecture] (#architecture)
+ * [Visuals] (#visuals)
+ * [Sounds] (#sounds)
+ * [Interactions] (#interactions)
 - [Code challenges] (#codechallenges)
 - [Team members] (#team)
 - [Course] (#course)
@@ -52,6 +52,7 @@ The percentages related to the use of every sense in a dream for those who are b
  
 ### Visuals <a name="visuals"></a>
 Visual choices focused on the **initial part of the homepage and instructions**.
+
 The homepage is a **sliding onepage** that opens with the animated *Dark Dreams* logo. _Coming down from the clouds_ you get to the city and the bedroom, while the purpose of Dark Dreams is being told and it begins to be set through a story. Every written text is read to be accessible by anyone.
 
 Instruction pages follow, accompanied by drawings to be more immediate. 
@@ -61,6 +62,7 @@ In addition to the initial animation, each button has a visual feedback.
  
 ### Sounds <a name="sounds"></a>
 Due to its nature, the project is mainly developed on audio.
+
 The first challenge was to choose sounds that could immerse the user in the city atmosphere and, at the same time, be distinguishable and provide feedback. In addition to the nature of sound itself, it was paid attention to its volume.
 To be used by anyone and to involve the user more, each text is associated with the voice over. The choice of the warm, feminine and persuasive voice was carried forward keeping in mind the tone of the project.
  
@@ -87,7 +89,7 @@ Another difficult point was the animation of the buttons, initially designed fro
 
 
 ## Team members <a name="team"></a>
-Dark Dreams was developed by:
+*Dark Dreams* was developed by:
 - Federica Prunotto
 - Ennio Sorrentino
 - Livia Stevenin
