@@ -3,13 +3,14 @@ var car4_drctn=(-1+Math.random()*2)
 var car3_drctn=(-1+Math.random()*2)
 var car2_drctn=(-1+Math.random()*2)
 var car1_drctn=(-1+Math.random()*2)
-var speed1=4
-var speed2=9.5
-var speed3=1.5
+var speed1=1
+var speed2=1
+var speed3=1
 var move1=0
 var move2=0
 var move3=0
 var move4=0
+var move0=0
 var player
 var alpha
 var beta
@@ -86,7 +87,11 @@ dog.loop()
 noise.play()
 noise.loop()
 
+console.log(car1)
 
+console.log(car3)
+
+console.log(car2)
 
     createCanvas(windowWidth,windowHeight)
     sfondo= image(backg,0,0,width,height)
@@ -123,64 +128,22 @@ player.show()
 
 player.collide()
 
-  player.x=windowWidth/2+map(gamma,-90,90,-windowWidth/5,windowWidth/5)
-
-//LEAVE THE TWO MEN ON YOUR SIDE
-if(level==2){ciao++
-//polygon(width/2-width/20,ciao%windowHeight,width/20,height/20)
-//polygon(width/2+width/20,(ciao+height/5)%windowHeight,width/20,height/20)
-var dist1= dist(width/2-width/20,ciao%windowHeight,player.x,player.y)
-var dist2= dist(width/2+width/20,(ciao+height/5)%windowHeight,player.x,player.y)
-//text(dist1,100,100,100)
-//text(dist2,100,200,100)
-man.amp(map(dist1,0,height/2,5,0))
-man1.amp(map(dist1,0,height/2,5,0))
-
-
-if(player.x>width/2+width/10){man.pan(1)
- man1.pan(1)}
-else if(player.x<width/2-width/10){man.pan(-1)
- man1.pan(-1)}
-
- else{man.pan(0)
- man1.pan(0)}
-}
-
-
-else{man.amp(0)
-man1.amp(0)}
-
-//PASS AFTER THE MOTORBIKE
-if(level==3){ciaone++
-   if(bike_drctn<0){
-     //polygon(ciaone*10%windowWidth,height/2-height/10,width/20,height/20)
-   }
-   else{
-     //polygon(windowWidth-ciaone*10%windowWidth,height/2-height/10,width/20,height/20)
-   }
-   var dist3= dist(windowWidth-ciaone*9.5%windowWidth,height/2-height/10,player.x,player.y)
-
-   bike.amp(map(dist3,0,width/2,5,0))
-
-   if(bike_drctn<0){
-   if(windowWidth-ciaone*9.5%windowWidth>player.x){bike.pan(-1)}
-   else{bike.pan(1)}
- }
-
-   else{
-   if(ciaone*9.5%windowWidth>player.x){bike.pan(-1)}
-   else{bike.pan(1)}
-
-   }
-
-}
-else{bike.amp(0)}
-
 
 //CARS
+if(level==3){ciaoissimo++
+  car1.loop()
+  var move0=ciaoissimo*speed0%windowWidth
+if(car1_drctn<0){
+  //polygon(move1,height/2-height/10,width/20,height/20)
+var dist4=dist(move1,height/2-height/10,player.x,player.y)
+car1.amp(map(dist4,0,width/2,5,0))
+if(move1>player.x){car1.pan(1)}
+else{car1.pan(-1)}
+}
 
 
 if(level==4){ciaoissimo++
+    car1.loop()
   move1=ciaoissimo*speed1%windowWidth
 if(car1_drctn<0){
   //polygon(move1,height/2-height/10,width/20,height/20)
@@ -198,9 +161,10 @@ else{
   else{car1.pan(-1)}
 }}
 
-else{car1.amp(0)}
+else{car1.stop()}
 
 if(level==5){ciaoissimo++
+    car2.loop()
  move2=ciaoissimo*speed2%windowWidth
 if(car2_drctn<0){
   //polygon(move2,height/2-(height/10*2),width/20,height/20)
@@ -218,9 +182,10 @@ else{
   else{car2.pan(-1)}
 }}
 
-else{car2.amp(0)}
+else{car2.stop()}
 
 if(level==6){ciaoissimo++
+  car3.play()
  move3=ciaoissimo*speed3%windowWidth
 if(car3_drctn<0){
   //polygon(move3,height/2-(height/10*3),width/20,height/20)
@@ -236,9 +201,9 @@ else{
   if(windowWidth-move3>player.x){car3.pan(1)}
   else{car3.pan(-1)}
 }}
-else{car3.amp(0)}
+else{car3.stop()}
 
-// 
+//
 // text(level,100,300)
 // text(goright[level],100,100)
 //

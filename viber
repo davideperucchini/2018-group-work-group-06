@@ -1,0 +1,3 @@
+
+function touchEnded() {
+  window.navigator.vibrate([500])}

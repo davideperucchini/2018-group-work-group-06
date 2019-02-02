@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DARK DREAMS</title>
+    <script src="p5.min.js"></script>
+    <script src="addons/p5.dom.min.js"></script>
+    <script src="addons/p5.sound.min.js"></script>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Cutive+Mono|Nanum+Gothic+Coding"
+      rel="stylesheet"
+    />
+
+    <style>
+      html,
+      body {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        background-color: #170d33;
+      }
+      .main {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        color: #fcf1e3;
+        background-color: #170d33;
+        background-image: url(assets/handMove.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: "Cutive Mono", monospace;
+        font-size: 100%;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .flex-container .text {
+        margin: 0;
+      }
+      p {
+        display: block;
+        text-align: left;
+        padding: 0;
+        margin-top: 3vh;
+        font-size: 5vw;
+      }
+      .flex-container .button {
+        width: 100%;
+        height: auto;
+      }
+      .play-btn {
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        width: 50px;
+        height: 50px;
+        background: radial-gradient(
+          circle,
+          rgba(23, 13, 51, 1) 0%,
+          rgba(38, 22, 82, 1) 52%,
+          rgba(60, 34, 109, 1) 100%
+        );
+        border-radius: 50%;
+        position: relative;
+        display: block;
+        box-shadow: 0px 0px 25px 3px rgba(38, 22, 82, 1);
+      }
+
+      /* triangle */
+      .play-btn::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateX(-40%) translateY(-50%);
+        transform-origin: center center;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 20px solid #fff;
+        z-index: 100;
+        transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+
+      /* pulse wave */
+      .play-btn:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation-delay: 0s;
+        animation: pulsate1 2s;
+        animation-direction: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps;
+        opacity: 1;
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, 0.75);
+        top: -11%;
+        left: -11%;
+        background: rgba(198, 16, 0, 0);
+      }
+
+      @keyframes pulsate1 {
+        0% {
+          transform: scale(0.6);
+          opacity: 1;
+          box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75),
+            0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+          box-shadow: none;
+        }
+      }
+      /*Loader*/
+      @keyframes lds-ripple {
+        0% {
+          top: 96px;
+          left: 96px;
+          width: 0;
+          height: 0;
+          opacity: 1;
+        }
+        100% {
+          top: 38px;
+          left: 38px;
+          width: 116px;
+          height: 116px;
+          opacity: 0;
+        }
+      }
+      #loader {
+        position: absolute;
+        left: 22vw;
+        top: 35vh;
+        z-index: 1;
+      }
+
+      .lds-ripple {
+        position: relative;
+      }
+      .lds-ripple div {
+        box-sizing: content-box;
+        position: absolute;
+        border-width: 4px;
+        border-style: solid;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+      .lds-ripple div:nth-child(1) {
+        border-color: #251848;
+      }
+      .lds-ripple div:nth-child(2) {
+        border-color: #ebe8c9;
+        animation-delay: -0.75s;
+      }
+      .lds-ripple {
+        width: 200px !important;
+        height: 200px !important;
+        transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+      }
+    </style>
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader">
+      <div class="lds-css ng-scope" style="width: 150px; height: 150px;">
+        <div style="width:100%;height:100%" class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:none;" id="myDiv">
+      <div class="main">
+        <div class="flex-container button">
+          <a class="play-btn" id="test" href="start.html" ;></a>
+        </div>
+
+        <div class="flex-container text">
+          <p>
+            To move forward, hold<br />
+            your finger on the<br />
+            screen. <br /><br />
+            If you hear something<br />
+            moving towards you,<br />
+            stop holding your<br />
+            finger and stand<br />
+            still, or you'll get<br />
+            hit.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 1500);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
