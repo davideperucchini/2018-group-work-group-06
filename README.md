@@ -1,9 +1,10 @@
-# Dark Dreams
+![](Images/Slide-Title.png)
 
 **video**
 
 ## Contents
 
+![](Images/Slide-Skyline.png)
 ## Project Idea
 Have you ever wondered what blind people dream?
 If you have never seen anything in your life, you'd dream with your hearing, your smell and your touch.
