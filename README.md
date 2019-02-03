@@ -70,8 +70,8 @@ The actual experience starts from the last page.
 In addition to the initial animation, each button has a visual feedback.
  
 ### Sounds
- <img align="left" width="150" src="Images/Slide-Dog.png">
- 
+ <img align="right" width="150" src="Images/Slide-Dog.png">
+
 Due to its nature, the project is mainly developed on audio.
 
 The first challenge was to choose sounds that could immerse the user in the city atmosphere and, at the same time, be distinguishable and provide feedback. In addition to the nature of sound itself, it was paid attention to its volume.
