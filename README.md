@@ -1,6 +1,6 @@
 ![](Images/Slide-Title.png)
 
-**gif**
+<img  src="Images/Teaser.gif">
 
 ## Contents
 - [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea--)
