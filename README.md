@@ -61,6 +61,7 @@ The percentages related to the use of every sense in a dream for those who are b
 Visual choices focused on the **initial part of the homepage and instructions**.
 
 <img align="left" src="Images/Slide-Visuals.png">
+
 The homepage is a **sliding onepage** that opens with the animated *Dark Dreams* logo. _Coming down from the clouds_ you get to the city and the bedroom, while the purpose of Dark Dreams is being told and it begins to be set through a story. Every written text is read to be accessible by anyone.
 
 Instruction pages follow, accompanied by drawings to be more immediate. 
@@ -82,14 +83,12 @@ Initially it was possible to be hit by an obstacle and die, forcing the user to 
 ### Interactions  <img align="right" width="150" src="Images/Interactions.gif">
 
 There are two main interactions: **rotation** and **tap**. They have been chosen to make the experience **as immersive as possible**.
-The first thing to do to proceed in the labyrinth is to turn in the direction of the sound.
+
+The first thing to do to proceed in the labyrinth is to **turn in the direction of the sound**.
  
-To be able to go on, you have to tap on the screen.
+To be able to go on, you have to **tap on the screen**.
  
 When you get very close to an obstacle, however, **the cell phone vibrates**, trying to simulate the touch.
-
-
-
 
 ## Code challenges 
  
