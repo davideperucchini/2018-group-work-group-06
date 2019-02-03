@@ -32,7 +32,7 @@ We have chosen to contextualize the **journey in a city**, in an attempt to retu
 Among all the sounds of the city the user will therefore be forced to distinguish the **barking of the dog**, paying attention to everything that surrounds it: bicycles, passers-by and cars.
 Initially we thought to create a creepy sound experience that could be easily linked to a nightmare. We later abandoned the idea to avoid ridiculing the experience, encouraging an **audio editing as truthful as possible**.
 
-[![](Image/Video.png)](http://www.youtube.com/watch?v=f3IDrRBufWs "")
+[![](http://img.youtube.com/vi/f3IDrRBufWs/0.jpg)](http://www.youtube.com/watch?v=f3IDrRBufWs)
 
 ## The research
 
@@ -69,7 +69,9 @@ The actual experience starts from the last page.
  
 In addition to the initial animation, each button has a visual feedback.
  
-### Sounds 
+### Sounds
+ <img align="right" width="150" src="Images/Slide-Dog.png">
+
 Due to its nature, the project is mainly developed on audio.
 
 The first challenge was to choose sounds that could immerse the user in the city atmosphere and, at the same time, be distinguishable and provide feedback. In addition to the nature of sound itself, it was paid attention to its volume.
