@@ -32,7 +32,7 @@ We have chosen to contextualize the **journey in a city**, in an attempt to retu
 Among all the sounds of the city the user will therefore be forced to distinguish the **barking of the dog**, paying attention to everything that surrounds it: bicycles, passers-by and cars.
 Initially we thought to create a creepy sound experience that could be easily linked to a nightmare. We later abandoned the idea to avoid ridiculing the experience, encouraging an **audio editing as truthful as possible**.
 
-[![](http://img.youtube.com/vi/f3IDrRBufWs/0.jpg)](http://www.youtube.com/watch?v=f3IDrRBufWs "")
+[![](Image/Video.png)](http://www.youtube.com/watch?v=f3IDrRBufWs "")
 
 ## The research
 
