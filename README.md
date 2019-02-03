@@ -48,7 +48,9 @@ The percentages related to the use of every sense in a dream for those who are b
 - taste → 26%
 - smell → 40%
 - hearing → 93%
-- tact → 67%
+- touch → 67%
+
+![](Images/Slide-Research.png)
 
 ## Design challenges
  
@@ -57,7 +59,7 @@ The percentages related to the use of every sense in a dream for those who are b
  
 ### Visuals 
 Visual choices focused on the **initial part of the homepage and instructions**.
-
+![](Images/Slide-Visuals.png)
 The homepage is a **sliding onepage** that opens with the animated *Dark Dreams* logo. _Coming down from the clouds_ you get to the city and the bedroom, while the purpose of Dark Dreams is being told and it begins to be set through a story. Every written text is read to be accessible by anyone.
 
 Instruction pages follow, accompanied by drawings to be more immediate. 
