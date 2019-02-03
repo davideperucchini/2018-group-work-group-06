@@ -1,21 +1,23 @@
 ![](Images/Slide-Title.png)
 
-**video**
+**gif**
 
 ## Contents
-- [Project Idea] (#projectidea)
-- [The research] (#research)
-- [Design challenges] (#designchallenges)
- - [Architecture] (#architecture)
- - [Visuals] (#visuals)
- - [Sounds] (#sounds)
- - [Interactions] (#interactions)
-- [Code challenges] (#codechallenges)
-- [Team members] (#team)
-- [Course] (#course)
+- [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea-)
+- [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research-)
+- [Design challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#design-challenges-)
+  * [Architecture](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#architecture-)
+  * [Visuals](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#visuals-)
+  * [Sounds](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#sounds-)
+  * [Interactions](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#interactions-)
+- [Code challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#code-challenges-)
+- [References](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#references-)
+- [Credits](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#credits-)
+- [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members-)
+- [Course](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#course-)
 
 ![](Images/Slide-Skyline.png)
-## Project Idea <a name="projectidea"></a>
+## Project Idea
 **Have you ever wondered what blind people dream?**
 
 If you have never seen anything in your life, you'd dream with your hearing, your smell and your touch.
@@ -30,7 +32,10 @@ We have chosen to contextualize the **journey in a city**, in an attempt to retu
 Among all the sounds of the city the user will therefore be forced to distinguish the **barking of the dog**, paying attention to everything that surrounds it: bicycles, passers-by and cars.
 Initially we thought to create a creepy sound experience that could be easily linked to a nightmare. We later abandoned the idea to avoid ridiculing the experience, encouraging an **audio editing as truthful as possible**.
 
-## The research <a name="research"></a>
+**video**
+
+## The research
+
 To better understand the context in which we experimented, we went to [Dialogo nel Buio](http://www.dialogonelbuio.org/index.php/it/), a **sensorial experience** managed by the Istituto dei Ciechi in Milan. It’s important to note that Dialogo nel Buio does not want to provide a simulation of blindness but rather to **show new ways of experiencing reality**. After the visit we gathered several reflections. In particular, we were accompanied by **anxiety, insecurity and bewilderment**.
 
 The research then moved on to the data.
@@ -45,13 +50,14 @@ The percentages related to the use of every sense in a dream for those who are b
 - hearing → 93%
 - tact → 67%
 
-## Design challenges <a name="designchallenges"></a>
+## Design challenges
  
-### Architecture <a name="architecture"></a>
+### Architecture 
 [grafico]
  
-### Visuals <a name="visuals"></a>
+### Visuals 
 Visual choices focused on the **initial part of the homepage and instructions**.
+
 The homepage is a **sliding onepage** that opens with the animated *Dark Dreams* logo. _Coming down from the clouds_ you get to the city and the bedroom, while the purpose of Dark Dreams is being told and it begins to be set through a story. Every written text is read to be accessible by anyone.
 
 Instruction pages follow, accompanied by drawings to be more immediate. 
@@ -59,8 +65,9 @@ The actual experience starts from the last page.
  
 In addition to the initial animation, each button has a visual feedback.
  
-### Sounds <a name="sounds"></a>
+### Sounds 
 Due to its nature, the project is mainly developed on audio.
+
 The first challenge was to choose sounds that could immerse the user in the city atmosphere and, at the same time, be distinguishable and provide feedback. In addition to the nature of sound itself, it was paid attention to its volume.
 To be used by anyone and to involve the user more, each text is associated with the voice over. The choice of the warm, feminine and persuasive voice was carried forward keeping in mind the tone of the project.
  
@@ -68,7 +75,7 @@ Another point that has been addressed is the difficulty of the experience. To in
  
 Initially it was possible to be hit by an obstacle and die, forcing the user to start over. Subsequently the death was removed to encourage an experience as continuous as possible. Instead of being hit, the obstacle brakes and the phone vibrates.
  
-### Interactions <a name="interactions"></a>
+### Interactions 
 There are two main interactions: rotation and tap. They have been chosen to make the experience as immersive as possible.
 The first thing to do to proceed in the labyrinth is to turn in the direction of the sound.
  
@@ -76,7 +83,7 @@ To be able to go on, you have to tap on the screen.
  
 When you get very close to an obstacle, however, the cell phone vibrates, trying to simulate the feel.
 
-## Code challenges <a name="codechallenges"></a>
+## Code challenges 
  
 To develop the initial part of the homepage, HTML and CSS were used.
 The main difficulty was managing responsiveness, difficulty managed thanks to the flexboxes.
@@ -85,15 +92,21 @@ The main difficulty was managing responsiveness, difficulty managed thanks to th
  
 Another difficult point was the animation of the buttons, initially designed from the png. In order to be freer in management, they were finally designed directly in CSS.
 
+## References 
 
-## Team members <a name="team"></a>
-Dark Dreams was developed by:
+## Credits 
+
+
+![](Images/Slide-Skyline.png)
+
+## Team members 
+*Dark Dreams* was developed by:
 - Federica Prunotto
 - Ennio Sorrentino
 - Livia Stevenin
 - Irene Zanardi
  
-## Course <a name="course"></a>
+## Course 
 [Creative Coding 2018/2019](https://drawwithcode.github.io/2018/)
 
 Politecnico di Milano - Scuola del Design
