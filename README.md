@@ -77,15 +77,16 @@ To be used by anyone and to involve the user more, each text is associated with 
 Another point that has been addressed is the difficulty of the experience. To increase the difficulty without making it impossible to get to the end, the project was tested with several people to receive the feedback needed to calibrate the sounds and the path.
  
 Initially it was possible to be hit by an obstacle and die, forcing the user to start over. Subsequently the death was removed to encourage an experience as continuous as possible. Instead of being hit, the obstacle brakes and the phone vibrates.
- 
-### Interactions 
-<img align="left" width="150" src="Images/Interactions.gif">
-There are two main interactions: rotation and tap. They have been chosen to make the experience as immersive as possible.
+
+
+### Interactions  <img align="right" width="150" src="Images/Interactions.gif">
+
+There are two main interactions: **rotation** and **tap**. They have been chosen to make the experience **as immersive as possible**.
 The first thing to do to proceed in the labyrinth is to turn in the direction of the sound.
  
 To be able to go on, you have to tap on the screen.
  
-When you get very close to an obstacle, however, the cell phone vibrates, trying to simulate the feel.
+When you get very close to an obstacle, however, **the cell phone vibrates**, trying to simulate the touch.
 
 
 
