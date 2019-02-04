@@ -1,7 +1,7 @@
 
 var player
 var alpha
-var level=0
+var level=6
 var move
 var car
 var ambulance
@@ -26,16 +26,19 @@ var bike
 var backg
 var sfondo
 var noise
-
+var victory
+var hit
 
 function preload(){
-  dog=loadSound("./assets/dog.mp3")
-noise=loadSound("./assets/nois.mp3")
+  dog=loadSound("./assets/dog bark.mp3")
+noise=loadSound("./assets/tapetosonoro_02_02.mp3")
 
 bike=loadSound("./assets/moto sound.mp3")
 car=loadSound("./assets/clackson.mp3")
 ambulance=loadSound("./assets/ambulance siren.mp3")
 backg=loadImage("./assets/sfondo.png")
+victory=loadSound("./assets/REM.mp3")
+hit=loadSound("./assets/braking.wav")
 }
 
 function setup(){
@@ -56,14 +59,9 @@ console.log(obstacle.orde)
 
 function draw(){
 
-//console.log(obstacle.x)
 if(level<8){obstacle.update()
 
-if(frameCount%obstacle.magic_num[level]==0 && level==obstacle.norep[level]) {obstacle.sound[level].play()
-  //  console.log(obstacle.x)
-//obstacle.sound[level].pan(map(frameCount%obstacle.magic_num[level],0,obstacle.magic_num[level],-1,1))
-// obstacle.sound[level].amp(map(frameCount%obstacle.magic_num[level],0,obstacle.magic_num[level],1,3))
-}
+if(frameCount%obstacle.magic_num[level]==0 && level==obstacle.norep[level]) {obstacle.sound[level].play()}
 if(player.x>obstacle.x-height/10&&player.x<obstacle.x+height/10){obstacle.sound[level].pan(0)}
 else if(player.x>obstacle.x-height/10){obstacle.sound[level].pan(-1)}
 else if(player.x<obstacle.x+height/10){obstacle.sound[level].pan(1)}
@@ -75,9 +73,16 @@ else if (ambulance.isPlaying()) {car.stop(),bike.stop()}
 if(player.x>obstacle.x-height/10&&player.x<obstacle.x+height/10&&
  player.y>obstacle.y-height/10&&player.y<obstacle.y+height/10){
 window.navigator.vibrate(50)
-player.y=height}}
+player.y=height
+hit.play()}
+}
 
-else{window.open("backhome.html")}
+else{
+  dog.stop()
+  noise.stop()
+
+if(mouseIsPressed){window.location.href = './backhome.html'}
+if(victory.isPlaying()==false){victory.loop()} }
 
 
 background(23,13,51)
@@ -95,6 +100,7 @@ noise.amp(map(level,0,7,0.1,0.5))
   ellipseMode(CENTER)
 textSize(width/5)
 dog.amp(1)
+
 //FOLLOW THE DOG
 if(goright[level]==45){
   if(alpha>90){dog.pan(1)}
@@ -121,10 +127,10 @@ else if(goright[level]==315){
   player.update()}
 }
 
-
-if(alpha>goright[level]-45 && alpha<goright[level]+45){
-  fill("white")
-player.update()}
+//
+// if(alpha>goright[level]-45 && alpha<goright[level]+45){
+//   fill("white")
+// player.update()}
 
 if(mouseIsPressed){
   fill('white')
@@ -183,10 +189,6 @@ if(player.y<height/10){player.y=windowHeight,level++}
 
 else if (mouseIsPressed){this.y=this.y-1}}
 }
-
-
-
-//window.navigator.vibrate([500,500,500])
 
 function touchEnded() {
   window.navigator.vibrate([0])
