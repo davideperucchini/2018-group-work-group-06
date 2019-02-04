@@ -1,22 +1,25 @@
-![](Images/Slide-Title.png)
+[tl]
 
-<img  src="Images/Teaser.gif">
+[intro]
+
+[sky]
 
 ## Contents
-- [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea--)
-- [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research--)
-- [Design challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#design-challenges--)
-  * [Architecture](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#architecture--)
-  * [Visuals](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#visuals--)
-  * [Sounds](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#sounds--)
-  * [Interactions](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#interactions--)
-- [Code challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#code-challenges--)
-- [References](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#references--)
-- [Credits](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#credits--)
-- [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members--)
-- [Course](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#course--)
+- [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea)
+- [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research)
+- [Design challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#design-challenges)
+  * [Architecture](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#architecture)
+  * [Visuals](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#visuals)
+  * [Sounds](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#sounds)
+  * [Interactions](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#interactions)
+- [Code challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#code-challenges)
+  * [The homepage](https://github.com/drawwithcode/2018-group-work-group-06#the-homepage)
+  * [The experience](https://github.com/drawwithcode/2018-group-work-group-06#the-experience)
+- [References](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#references)
+- [Credits](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#credits)
+- [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members)
+- [Course](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#course)
 
-![](Images/Slide-Skyline.png)
 ## Project Idea
 **Have you ever wondered what blind people dream?**
 
@@ -32,7 +35,7 @@ We have chosen to contextualize the **journey in a city**, in an attempt to retu
 Among all the sounds of the city the user will therefore be forced to distinguish the **barking of the dog**, paying attention to everything that surrounds it: bicycles, passers-by and cars.
 Initially we thought to create a creepy sound experience that could be easily linked to a nightmare. We later abandoned the idea to avoid ridiculing the experience, encouraging an **audio editing as truthful as possible**.
 
-[![](http://img.youtube.com/vi/f3IDrRBufWs/0.jpg)](http://www.youtube.com/watch?v=f3IDrRBufWs)
+[dem]
 
 ## The research
 
@@ -50,17 +53,18 @@ The percentages related to the use of every sense in a dream for those who are b
 - hearing → 93%
 - touch → 67%
 
-![](Images/Slide-Research.png)
+[res]
 
 ## Design challenges
  
 ### Architecture 
-[grafico]
+
+[ar]
  
 ### Visuals 
 Visual choices focused on the **initial part of the homepage and instructions**.
 
-<img align="left" src="Images/Slide-Visuals.png">
+[visual]
 
 The homepage is a **sliding onepage** that opens with the animated *Dark Dreams* logo. _Coming down from the clouds_ you get to the city and the bedroom, while the purpose of Dark Dreams is being told and it begins to be set through a story. Every written text is read to be accessible by anyone.
 
@@ -70,19 +74,19 @@ The actual experience starts from the last page.
 In addition to the initial animation, each button has a visual feedback.
  
 ### Sounds
- <img align="right" width="150" src="Images/Slide-Dog.png">
+[sds]
 
-Due to its nature, the project is mainly developed on audio.
+Due to its nature, the project is **mainly developed on audio**.
 
-The first challenge was to choose sounds that could immerse the user in the city atmosphere and, at the same time, be distinguishable and provide feedback. In addition to the nature of sound itself, it was paid attention to its volume.
-To be used by anyone and to involve the user more, each text is associated with the voice over. The choice of the warm, feminine and persuasive voice was carried forward keeping in mind the tone of the project.
+The first challenge was to choose sounds that could **immerse the user in the city atmosphere** and, at the same time, be **distinguishable** and provide **feedback**. In addition to the nature of the sound itself, it was paid attention to its **volume**.
+To be used by anyone and to involve the user more, **each text is associated with the voice over**. The choice of the warm, feminine and persuasive voice was carried forward keeping in mind the tone of the project.
  
 Another point that has been addressed is the difficulty of the experience. To increase the difficulty without making it impossible to get to the end, the project was tested with several people to receive the feedback needed to calibrate the sounds and the path.
  
 Initially it was possible to be hit by an obstacle and die, forcing the user to start over. Subsequently the death was removed to encourage an experience as continuous as possible. Instead of being hit, the obstacle brakes and the phone vibrates.
 
 
-### Interactions  <img align="right" width="150" src="Images/Interactions.gif">
+### Interactions  [int]
 
 There are two main interactions: **rotation** and **tap**. They have been chosen to make the experience **as immersive as possible**.
 
@@ -93,20 +97,25 @@ To be able to go on, you have to **tap on the screen**.
 When you get very close to an obstacle, however, **the cell phone vibrates**, trying to simulate the touch.
 
 ## Code challenges 
- 
+
+### The homepage 
 To develop the initial part of the homepage, HTML and CSS were used.
 The main difficulty was managing responsiveness, difficulty managed thanks to the flexboxes.
 
---code--
+[hpcode challenge 1]
  
 Another difficult point was the animation of the buttons, initially designed from the png. In order to be freer in management, they were finally designed directly in CSS.
+
+[hpcode challange 2]
+     
+### The experience
 
 ## References 
 
 ## Credits 
 
 
-![](Images/Slide-Skyline.png)
+[sky]
 
 ## Team members 
 *Dark Dreams* was developed by:
@@ -121,6 +130,7 @@ Another difficult point was the animation of the buttons, initially designed fro
 Politecnico di Milano - Scuola del Design
 
 Faculty: Michele Mauri, Tommaso Elli
+
 
 
 
