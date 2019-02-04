@@ -11,14 +11,15 @@
   * [Sounds](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#sounds)
   * [Interactions](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#interactions)
 - [Code challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#code-challenges)
-  * [The homepage] (https://github.com/drawwithcode/2018-group-work-group-06#the-homepage)
-  * [The experience] (https://github.com/drawwithcode/2018-group-work-group-06#the-experience)
+  * [The homepage](https://github.com/drawwithcode/2018-group-work-group-06#the-homepage)
+  * [The experience](https://github.com/drawwithcode/2018-group-work-group-06#the-experience)
 - [References](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#references)
 - [Credits](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#credits)
 - [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members)
 - [Course](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#course)
 
 ![](Images/Slide-Skyline.png)
+
 ## Project Idea
 **Have you ever wondered what blind people dream?**
 
@@ -34,7 +35,8 @@ We have chosen to contextualize the **journey in a city**, in an attempt to retu
 Among all the sounds of the city the user will therefore be forced to distinguish the **barking of the dog**, paying attention to everything that surrounds it: bicycles, passers-by and cars.
 Initially we thought to create a creepy sound experience that could be easily linked to a nightmare. We later abandoned the idea to avoid ridiculing the experience, encouraging an **audio editing as truthful as possible**.
 
-[![](http://img.youtube.com/vi/f3IDrRBufWs/0.jpg)](http://www.youtube.com/watch?v=f3IDrRBufWs)
+![](Images/Video.png)(http://www.youtube.com/watch?v=f3IDrRBufWs)
+
 
 ## The research
 
@@ -74,10 +76,10 @@ In addition to the initial animation, each button has a visual feedback.
 ### Sounds
  <img align="right" width="150" src="Images/Slide-Dog.png">
 
-Due to its nature, the project is mainly developed on audio.
+Due to its nature, the project is **mainly developed on audio**.
 
-The first challenge was to choose sounds that could immerse the user in the city atmosphere and, at the same time, be distinguishable and provide feedback. In addition to the nature of sound itself, it was paid attention to its volume.
-To be used by anyone and to involve the user more, each text is associated with the voice over. The choice of the warm, feminine and persuasive voice was carried forward keeping in mind the tone of the project.
+The first challenge was to choose sounds that could **immerse the user in the city atmosphere** and, at the same time, be **distinguishable** and provide **feedback**. In addition to the nature of the sound itself, it was paid attention to its **volume**.
+To be used by anyone and to involve the user more, **each text is associated with the voice over**. The choice of the warm, feminine and persuasive voice was carried forward keeping in mind the tone of the project.
  
 Another point that has been addressed is the difficulty of the experience. To increase the difficulty without making it impossible to get to the end, the project was tested with several people to receive the feedback needed to calibrate the sounds and the path.
  
@@ -202,14 +204,9 @@ Another difficult point was the animation of the buttons, initially designed fro
           box-shadow: none;
         }
       }
- ```
-     
-     
-     
+ ```   
      
 ### The experience
-
-
 
 ## References 
 
