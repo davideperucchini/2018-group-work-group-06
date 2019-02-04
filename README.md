@@ -55,7 +55,7 @@ The percentages related to the use of every sense in a dream for those who are b
 ## Design challenges
  
 ### Architecture 
-[grafico]
+<img width=100% src="Images/Architecture.png">
  
 ### Visuals 
 Visual choices focused on the **initial part of the homepage and instructions**.
