@@ -1,6 +1,6 @@
 ![](Images/Slide-Title.png)
 
-**gif**
+<img width=100% src="Images/Teaser.gif">
 
 ## Contents
 - [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea--)
@@ -93,13 +93,121 @@ To be able to go on, you have to **tap on the screen**.
 When you get very close to an obstacle, however, **the cell phone vibrates**, trying to simulate the touch.
 
 ## Code challenges 
- 
+
+### The homepage 
 To develop the initial part of the homepage, HTML and CSS were used.
 The main difficulty was managing responsiveness, difficulty managed thanks to the flexboxes.
 
---code--
+``` css
+.flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 95vh;
+        width: 100%;
+        padding-top: 10%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+```
  
 Another difficult point was the animation of the buttons, initially designed from the png. In order to be freer in management, they were finally designed directly in CSS.
+
+``` css
+  .typewriter  {
+       overflow: hidden; 
+       border-right: .15em solid; 
+       white-space: nowrap; 
+       margin: 0 auto;
+       animation:
+       typing 3.5s steps(20, end) infinite,
+       blink-caret .75s step-end infinite;
+     }
+
+     /* The typing effect */
+     @keyframes typing {
+       from { width: 0 }
+       to { width: 100% }
+     }
+     /* The typewriter cursor effect */
+     @keyframes blink-caret {
+       from, to { border-color: transparent }
+       50% { border-color: #fcf1e3; }
+     }
+     
+      .play-btn {
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        width: 50px;
+        height: 50px;
+        background: radial-gradient(
+          circle,
+          rgba(23, 13, 51, 1) 0%,
+          rgba(38, 22, 82, 1) 52%,
+          rgba(60, 34, 109, 1) 100%
+        );
+        border-radius: 50%;
+        position: relative;
+        display: block;
+        box-shadow: 0px 0px 25px 3px rgba(38, 22, 82, 1);
+      }
+
+      /* triangle */
+      .play-btn::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateX(-40%) translateY(-50%);
+        transform-origin: center center;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 20px solid #fff;
+        z-index: 100;
+        transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+
+      /* pulse wave */
+      .play-btn:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation-delay: 0s;
+        animation: pulsate1 2s;
+        animation-direction: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps;
+        opacity: 1;
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, 0.75);
+        top: -11%;
+        left: -11%;
+        background: rgba(198, 16, 0, 0);
+      }
+
+      @keyframes pulsate1 {
+        0% {
+          transform: scale(0.6);
+          opacity: 1;
+          box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75),
+            0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+          box-shadow: none;
+        }
+      }
+ ```
+     
+     
+     
+     
+### The experience
+
+
 
 ## References 
 
