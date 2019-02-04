@@ -1,8 +1,8 @@
 ![](Images/Slide-Title.png)
 
-<img width=100% src="Images/Teaser.gif">
+[intro]
 
-![](Images/Slide-Skyline.png)
+[sky]
 
 ## Contents
 - [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea)
@@ -35,10 +35,7 @@ We have chosen to contextualize the **journey in a city**, in an attempt to retu
 Among all the sounds of the city the user will therefore be forced to distinguish the **barking of the dog**, paying attention to everything that surrounds it: bicycles, passers-by and cars.
 Initially we thought to create a creepy sound experience that could be easily linked to a nightmare. We later abandoned the idea to avoid ridiculing the experience, encouraging an **audio editing as truthful as possible**.
 
-[![](http://img.youtube.com/vi/f3IDrRBufWs/0.jpg)](http://www.youtube.com/watch?v=f3IDrRBufWs)
-
-[![](/Image/Video.png)](#)
-<a href="http://www.youtube.com/watch?v=f3IDrRBufWs"><img src="Image/Video.png"/></a>
+[dem]
 
 ## The research
 
@@ -56,17 +53,18 @@ The percentages related to the use of every sense in a dream for those who are b
 - hearing → 93%
 - touch → 67%
 
-![](Images/Slide-Research.png)
+[res]
 
 ## Design challenges
  
 ### Architecture 
-<img width=100% src="Images/Architecture.png">
+
+[ar]
  
 ### Visuals 
 Visual choices focused on the **initial part of the homepage and instructions**.
 
-<img align="left" src="Images/Slide-Visuals.png">
+[visual]
 
 The homepage is a **sliding onepage** that opens with the animated *Dark Dreams* logo. _Coming down from the clouds_ you get to the city and the bedroom, while the purpose of Dark Dreams is being told and it begins to be set through a story. Every written text is read to be accessible by anyone.
 
@@ -76,7 +74,7 @@ The actual experience starts from the last page.
 In addition to the initial animation, each button has a visual feedback.
  
 ### Sounds
- <img align="right" width="150" src="Images/Slide-Dog.png">
+[sds]
 
 Due to its nature, the project is **mainly developed on audio**.
 
@@ -88,7 +86,7 @@ Another point that has been addressed is the difficulty of the experience. To in
 Initially it was possible to be hit by an obstacle and die, forcing the user to start over. Subsequently the death was removed to encourage an experience as continuous as possible. Instead of being hit, the obstacle brakes and the phone vibrates.
 
 
-### Interactions  <img align="right" width="150" src="Images/Interactions.gif">
+### Interactions  [int]
 
 There are two main interactions: **rotation** and **tap**. They have been chosen to make the experience **as immersive as possible**.
 
@@ -104,109 +102,11 @@ When you get very close to an obstacle, however, **the cell phone vibrates**, tr
 To develop the initial part of the homepage, HTML and CSS were used.
 The main difficulty was managing responsiveness, difficulty managed thanks to the flexboxes.
 
-``` css
-.flex-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 95vh;
-        width: 100%;
-        padding-top: 10%;
-        margin-left: 0;
-        margin-right: 0;
-      }
-```
+[hpcode challenge 1]
  
 Another difficult point was the animation of the buttons, initially designed from the png. In order to be freer in management, they were finally designed directly in CSS.
 
-``` css
-  .typewriter  {
-       overflow: hidden; 
-       border-right: .15em solid; 
-       white-space: nowrap; 
-       margin: 0 auto;
-       animation:
-       typing 3.5s steps(20, end) infinite,
-       blink-caret .75s step-end infinite;
-     }
-
-     /* The typing effect */
-     @keyframes typing {
-       from { width: 0 }
-       to { width: 100% }
-     }
-     /* The typewriter cursor effect */
-     @keyframes blink-caret {
-       from, to { border-color: transparent }
-       50% { border-color: #fcf1e3; }
-     }
-     
-      .play-btn {
-        margin-top: 5vh;
-        margin-bottom: 2vh;
-        width: 50px;
-        height: 50px;
-        background: radial-gradient(
-          circle,
-          rgba(23, 13, 51, 1) 0%,
-          rgba(38, 22, 82, 1) 52%,
-          rgba(60, 34, 109, 1) 100%
-        );
-        border-radius: 50%;
-        position: relative;
-        display: block;
-        box-shadow: 0px 0px 25px 3px rgba(38, 22, 82, 1);
-      }
-
-      /* triangle */
-      .play-btn::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateX(-40%) translateY(-50%);
-        transform-origin: center center;
-        width: 0;
-        height: 0;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-left: 20px solid #fff;
-        z-index: 100;
-        transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-      }
-
-      /* pulse wave */
-      .play-btn:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        animation-delay: 0s;
-        animation: pulsate1 2s;
-        animation-direction: forwards;
-        animation-iteration-count: infinite;
-        animation-timing-function: steps;
-        opacity: 1;
-        border-radius: 50%;
-        border: 5px solid rgba(255, 255, 255, 0.75);
-        top: -11%;
-        left: -11%;
-        background: rgba(198, 16, 0, 0);
-      }
-
-      @keyframes pulsate1 {
-        0% {
-          transform: scale(0.6);
-          opacity: 1;
-          box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75),
-            0px 0px 25px 10px rgba(255, 255, 255, 0.75);
-        }
-        100% {
-          transform: scale(1);
-          opacity: 0;
-          box-shadow: none;
-        }
-      }
- ```   
+[hpcode challange 2]
      
 ### The experience
 
@@ -215,7 +115,7 @@ Another difficult point was the animation of the buttons, initially designed fro
 ## Credits 
 
 
-![](Images/Slide-Skyline.png)
+[sky]
 
 ## Team members 
 *Dark Dreams* was developed by:
