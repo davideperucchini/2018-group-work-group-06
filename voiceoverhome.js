@@ -11,6 +11,6 @@ function setup(){
 }
 function draw(){
   if(frameCount==60){rem.play()}
-  if(frameCount==12*60){sem.play()}
-  else if (frameCount==28*60) {tem.play()}
+  if(frameCount==720){sem.play()}
+  else if (frameCount==1680) {tem.play()}
 }
