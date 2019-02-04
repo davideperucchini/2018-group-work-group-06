@@ -3,18 +3,20 @@
 <img width=100% src="Images/Teaser.gif">
 
 ## Contents
-- [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea--)
-- [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research--)
-- [Design challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#design-challenges--)
-  * [Architecture](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#architecture--)
-  * [Visuals](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#visuals--)
-  * [Sounds](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#sounds--)
-  * [Interactions](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#interactions--)
-- [Code challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#code-challenges--)
-- [References](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#references--)
-- [Credits](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#credits--)
-- [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members--)
-- [Course](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#course--)
+- [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea)
+- [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research)
+- [Design challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#design-challenges)
+  * [Architecture](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#architecture)
+  * [Visuals](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#visuals)
+  * [Sounds](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#sounds)
+  * [Interactions](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#interactions)
+- [Code challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#code-challenges)
+  * [The homepage] (https://github.com/drawwithcode/2018-group-work-group-06#the-homepage)
+  * [The experience] (https://github.com/drawwithcode/2018-group-work-group-06#the-experience)
+- [References](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#references)
+- [Credits](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#credits)
+- [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members)
+- [Course](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#course)
 
 ![](Images/Slide-Skyline.png)
 ## Project Idea
