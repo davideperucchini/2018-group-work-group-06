@@ -2,6 +2,8 @@
 
 <img width=100% src="Images/Teaser.gif">
 
+![](Images/Slide-Skyline.png)
+
 ## Contents
 - [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea)
 - [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research)
@@ -17,8 +19,6 @@
 - [Credits](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#credits)
 - [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members)
 - [Course](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#course)
-
-![](Images/Slide-Skyline.png)
 
 ## Project Idea
 **Have you ever wondered what blind people dream?**
@@ -230,6 +230,7 @@ Another difficult point was the animation of the buttons, initially designed fro
 Politecnico di Milano - Scuola del Design
 
 Faculty: Michele Mauri, Tommaso Elli
+
 
 
 
