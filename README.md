@@ -5,8 +5,8 @@
 [sky]
 
 ## Contents
-- [The project](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea)
-  * [The idea]()
+- [The project](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-project)
+  * [The idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-idea)
   * [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research)
   * [...]
 - [Design challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#design-challenges)
@@ -74,21 +74,6 @@ The homepage is a **sliding onepage** that opens with the animated *Dark Dreams*
 
 Instruction pages follow, accompanied by drawings to be more immediate. 
 The actual experience starts from the last page.
-
-#### Feedbacks
-In addition to the title animation and to the loading page, each button has a visual animated feedback. 
- 
-##### Let me sleep Button
-[lms]
- 
-##### Go on Button
-[go]
- 
-##### Begin Button
-[bn]
-
-##### Tap
-[tap]
  
 ### Sounds
 [sds]
@@ -124,7 +109,24 @@ The main difficulty was managing responsiveness, difficulty managed thanks to th
 Another difficult point was the animation of the buttons, initially designed from the png. In order to be freer in management, they were finally designed directly in CSS.
 
 [hpcode challange 2]
-     
+
+### Feedbacks
+In addition to the title animation and to the loading page, each button has a visual animated feedback. 
+ 
+#### Let me sleep Button
+[lms]
+ 
+#### Go on Button
+[go]
+ 
+#### Begin Button
+[bn]
+
+#### Tap
+
+
+[tap]
+
 ### The experience
 
 ## References 
