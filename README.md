@@ -5,8 +5,10 @@
 [sky]
 
 ## Contents
-- [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea)
-- [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research)
+- [The project](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-project)
+  * [The idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-idea)
+  * [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research)
+  * [...]
 - [Design challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#design-challenges)
   * [Architecture](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#architecture)
   * [Visuals](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#visuals)
@@ -20,7 +22,10 @@
 - [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members)
 - [Course](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#course)
 
-## Project Idea
+## The project 
+
+### The idea
+
 **Have you ever wondered what blind people dream?**
 
 If you have never seen anything in your life, you'd dream with your hearing, your smell and your touch.
@@ -33,11 +38,10 @@ First, the user will move within a **maze** to get to the goal. The only **clues
 We have chosen to contextualize the **journey in a city**, in an attempt to return the most recurring nightmare of the blind: **to lose your guide dog**. 
 
 Among all the sounds of the city the user will therefore be forced to distinguish the **barking of the dog**, paying attention to everything that surrounds it: bicycles, passers-by and cars.
-Initially we thought to create a creepy sound experience that could be easily linked to a nightmare. We later abandoned the idea to avoid ridiculing the experience, encouraging an **audio editing as truthful as possible**.
 
 [dem]
 
-## The research
+### The research
 
 To better understand the context in which we experimented, we went to [Dialogo nel Buio](http://www.dialogonelbuio.org/index.php/it/), a **sensorial experience** managed by the Istituto dei Ciechi in Milan. It’s important to note that Dialogo nel Buio does not want to provide a simulation of blindness but rather to **show new ways of experiencing reality**. After the visit we gathered several reflections. In particular, we were accompanied by **anxiety, insecurity and bewilderment**.
 
@@ -70,8 +74,6 @@ The homepage is a **sliding onepage** that opens with the animated *Dark Dreams*
 
 Instruction pages follow, accompanied by drawings to be more immediate. 
 The actual experience starts from the last page.
- 
-In addition to the initial animation, each button has a visual feedback.
  
 ### Sounds
 [sds]
@@ -107,12 +109,41 @@ The main difficulty was managing responsiveness, difficulty managed thanks to th
 Another difficult point was the animation of the buttons, initially designed from the png. In order to be freer in management, they were finally designed directly in CSS.
 
 [hpcode challange 2]
-     
+
+### Feedbacks
+In addition to the title animation and to the loading page, each button has a visual animated feedback. 
+ 
+#### Let me sleep Button
+[lms]
+ 
+#### Go on Button
+[go]
+ 
+#### Begin Button
+[bn]
+
+#### Tap
+
+
+[tap]
+
 ### The experience
 
 ## References 
+In addition to the research previously cited, images were collected as a reference point for the development of the visual part. Especially, the blue and violet color and the simple lines with few shades have been extracted.
+
+[ref]
+
+The sounds were chosen after listening to the streets noises. We then searched for blind simulations to better understood how they were carried out. In particular, we found an [example on Youtube](https://www.youtube.com/watch?v=rpzSs0c-xyM) that described how crossing a street feels like. 
 
 ## Credits 
+We developed the project using HTML, CSS and P5.
+
+The title font is Frijole.
+
+The voiceover was recorded by Diane Lehman.
+
+The sounds were downloaded from Freesounds.
 
 
 [sky]
