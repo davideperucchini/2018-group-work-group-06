@@ -1,20 +1,20 @@
 ![](Images/Slide-Title.png)
 
-**gif**
+<img  src="Images/Teaser.gif">
 
 ## Contents
-- [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea-)
-- [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research-)
-- [Design challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#design-challenges-)
-  * [Architecture](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#architecture-)
-  * [Visuals](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#visuals-)
-  * [Sounds](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#sounds-)
-  * [Interactions](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#interactions-)
-- [Code challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#code-challenges-)
-- [References](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#references-)
-- [Credits](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#credits-)
-- [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members-)
-- [Course](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#course-)
+- [Project Idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#project-idea--)
+- [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research--)
+- [Design challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#design-challenges--)
+  * [Architecture](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#architecture--)
+  * [Visuals](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#visuals--)
+  * [Sounds](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#sounds--)
+  * [Interactions](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#interactions--)
+- [Code challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#code-challenges--)
+- [References](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#references--)
+- [Credits](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#credits--)
+- [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members--)
+- [Course](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#course--)
 
 ![](Images/Slide-Skyline.png)
 ## Project Idea
@@ -32,7 +32,7 @@ We have chosen to contextualize the **journey in a city**, in an attempt to retu
 Among all the sounds of the city the user will therefore be forced to distinguish the **barking of the dog**, paying attention to everything that surrounds it: bicycles, passers-by and cars.
 Initially we thought to create a creepy sound experience that could be easily linked to a nightmare. We later abandoned the idea to avoid ridiculing the experience, encouraging an **audio editing as truthful as possible**.
 
-**video**
+[![](http://img.youtube.com/vi/f3IDrRBufWs/0.jpg)](http://www.youtube.com/watch?v=f3IDrRBufWs)
 
 ## The research
 
@@ -48,7 +48,9 @@ The percentages related to the use of every sense in a dream for those who are b
 - taste → 26%
 - smell → 40%
 - hearing → 93%
-- tact → 67%
+- touch → 67%
+
+![](Images/Slide-Research.png)
 
 ## Design challenges
  
@@ -58,6 +60,8 @@ The percentages related to the use of every sense in a dream for those who are b
 ### Visuals 
 Visual choices focused on the **initial part of the homepage and instructions**.
 
+<img align="left" src="Images/Slide-Visuals.png">
+
 The homepage is a **sliding onepage** that opens with the animated *Dark Dreams* logo. _Coming down from the clouds_ you get to the city and the bedroom, while the purpose of Dark Dreams is being told and it begins to be set through a story. Every written text is read to be accessible by anyone.
 
 Instruction pages follow, accompanied by drawings to be more immediate. 
@@ -65,7 +69,9 @@ The actual experience starts from the last page.
  
 In addition to the initial animation, each button has a visual feedback.
  
-### Sounds 
+### Sounds
+ <img align="right" width="150" src="Images/Slide-Dog.png">
+
 Due to its nature, the project is mainly developed on audio.
 
 The first challenge was to choose sounds that could immerse the user in the city atmosphere and, at the same time, be distinguishable and provide feedback. In addition to the nature of sound itself, it was paid attention to its volume.
@@ -74,14 +80,17 @@ To be used by anyone and to involve the user more, each text is associated with 
 Another point that has been addressed is the difficulty of the experience. To increase the difficulty without making it impossible to get to the end, the project was tested with several people to receive the feedback needed to calibrate the sounds and the path.
  
 Initially it was possible to be hit by an obstacle and die, forcing the user to start over. Subsequently the death was removed to encourage an experience as continuous as possible. Instead of being hit, the obstacle brakes and the phone vibrates.
+
+
+### Interactions  <img align="right" width="150" src="Images/Interactions.gif">
+
+There are two main interactions: **rotation** and **tap**. They have been chosen to make the experience **as immersive as possible**.
+
+The first thing to do to proceed in the labyrinth is to **turn in the direction of the sound**.
  
-### Interactions 
-There are two main interactions: rotation and tap. They have been chosen to make the experience as immersive as possible.
-The first thing to do to proceed in the labyrinth is to turn in the direction of the sound.
+To be able to go on, you have to **tap on the screen**.
  
-To be able to go on, you have to tap on the screen.
- 
-When you get very close to an obstacle, however, the cell phone vibrates, trying to simulate the feel.
+When you get very close to an obstacle, however, **the cell phone vibrates**, trying to simulate the touch.
 
 ## Code challenges 
  
