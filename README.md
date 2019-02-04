@@ -1,4 +1,4 @@
-![](Images/Slide-Title.png)
+[tl]
 
 [intro]
 
