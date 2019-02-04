@@ -88,12 +88,12 @@ if(victory.isPlaying()==false){victory.loop()} }
 background(23,13,51)
 noise.amp(map(level,0,7,0.1,0.5))
 
-
-    ellipse(obstacle.x,obstacle.y,height/5,height/5)
-    ellipse(player.x,player.y,width/20,width/20)
-
-    text(goright[level],100,100)
-    text(alpha,100,200)
+    //
+    // ellipse(obstacle.x,obstacle.y,height/5,height/5)
+    // ellipse(player.x,player.y,width/20,width/20)
+    //
+    // text(goright[level],100,100)
+    // text(alpha,100,200)
 
   fill('white')
   noStroke()
