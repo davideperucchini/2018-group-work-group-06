@@ -424,7 +424,7 @@ if(mouseIsPressed){
 
 ### The experience
 #### Character
-The _update()_ method will allow us to proceed in the game, getting closer to our target and making us pass through the levels.
+The _update()_ method will allow us to proceed in the experience, getting closer to our target and making us pass through the levels.
 
 ``` javascript
 if (player.y < height / 10) {player.y = windowHeight, level++}
@@ -443,7 +443,7 @@ player.y = height}
 Just as the Obstacle, _Character()_ function is called in the _setup()_ as they’ll not replicate them, as _Character()_ has always to act the same, and as all the values _Obstacle()_ is taking are set just once during the _setup()_.
 
 #### Obstacles
-Obstacles are managed by a _set_order()_ method that's called in the _setup()_ functions and sets all the values the Obstacle is taking during the game.
+Obstacles are managed by a _set_order()_ method that's called in the _setup()_ functions and sets all the values the Obstacle is taking during the experience.
 
 ``` javascript
   this.set_orde = function set_orde(){
@@ -527,7 +527,7 @@ The rotation is controlled by the alpha variable which return the current positi
 window.addEventListener('deviceorientation', function(e){alpha = e.alpha;})
 ```
  
-Beta and gamma variables are also supported but we decided not to introduce them, as we noticed the three variables often influenced each other causing disorders during the game.
+Beta and gamma variables are also supported but we decided not to introduce them, as we noticed the three variables often influenced each other causing disorders during the experience.
 
 #### Vibration
 Because of restriction policy of iOS, we couldn’t implement the vibration for iPhones like we did for Android smartphones. 
