@@ -26,18 +26,16 @@ var bike
 var backg
 var sfondo
 var noise
-var victory
 var hit
 
 function preload(){
-  dog=loadSound("./assets/dog bark.mp3")
+  dog=loadSound("./assets/dog bark2.mp3")
 noise=loadSound("./assets/tapetosonoro_02_02.mp3")
 
 bike=loadSound("./assets/moto sound.mp3")
 car=loadSound("./assets/clackson.mp3")
 ambulance=loadSound("./assets/ambulance siren.mp3")
 backg=loadImage("./assets/sfondo.png")
-victory=loadSound("./assets/REM.mp3")
 hit=loadSound("./assets/braking.wav")
 }
 
@@ -90,8 +88,7 @@ else{
   dog.stop()
   noise.stop()
 
-if(mouseIsPressed){window.location.href = './backhome.html'}
-if(victory.isPlaying()==false){victory.loop()} }
+if(mouseIsPressed){window.location.href = './backhome.html'} }
 
 
 background(23,13,51)

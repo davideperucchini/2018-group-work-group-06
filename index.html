@@ -53,7 +53,6 @@
         margin-left: 0;
         margin-right: 0;
       }
-
       /*Page1*/
        .page1 {
         background: rgb(23,13,51);
@@ -78,7 +77,6 @@
           opacity: 1;
         }
       }
-
       #moon {
         width: 100%;
         height: auto;
@@ -111,26 +109,22 @@
         color: #fcf1e3;
         z-index: 6;
       }
-      h1 {
-        padding: 0;
-        width: 50vw;
-        font-family: "Frijole", monospace;
-        text-align: center;
-        font-size: 10vw;
-        margin: 0;
+      #pngTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         z-index: 6;
-        animation: enterTitle 6.8s;
+        margin-top: -2vh;
       }
-      h2 {
-        padding: 0;
-        width: 50vw;
-        font-family: "Frijole", monospace;
-        text-align: center;
-        font-size: 8vw;
-        margin: 0;
-        margin-top: -5vh;
-        z-index: 6;
+      #dark {
+        width: 30vw;
         animation: enterTitle 5.8s;
+      }
+      #dreams {
+        width: 58vw;
+        animation: enterTitle 6.8s;
       }
       @keyframes enterTitle {
         0% {
@@ -139,7 +133,6 @@
         50% {
           opacity: 0;
         }
-
         75% {
           opacity: 0.7;
         }
@@ -283,7 +276,6 @@
           transform: translateY(2px);
         }
       }
-
       /*Page2*/
       p {
         z-index: 1;
@@ -335,7 +327,6 @@
         right: 0;
         animation: moveRight 4s infinite linear;
       }
-
       /* Page 3 */
       #cloudRightPage3 {
         max-width: 100vw;
@@ -416,7 +407,6 @@
        typing 3.5s steps(20, end) infinite,
        blink-caret .75s step-end infinite;
      }
-
      /* The typing effect */
      @keyframes typing {
        from { width: 0 }
@@ -433,7 +423,6 @@
           display: none;
         }
       }
-
       /*Maedia queries laptop*/
       @media only screen and (min-width: 640px) {
         html, body {
@@ -485,7 +474,6 @@
         .flip-scale-up-hor {
 	        animation: flip-scale-up-hor 0.8s linear both;
         }
-
         @keyframes flip-scale-up-hor {
           0% {
               transform: scale(1) rotateX(0);
@@ -497,30 +485,26 @@
               transform: scale(1) rotateX(-180deg);
             }
           }
-        .title {
-          position: absolute;
-          top: 60vh;
-          left: 25vw;
-        }
-        h1 {
-          padding: 0;
-          font-family: "Frijole", monospace;
-          text-align: center;
-          font-size: 1.5vw;
-          margin: 0;
-          z-index: 2;
-          animation: enterTitle 3s;
-        }
-        h2 {
-          padding: 0;
-          font-family: "Frijole", monospace;
-          text-align: center;
-          font-size: 1vw;
-          margin: 0;
-          z-index: 2;
-          animation: enterTitle 2s;
-        }
-
+          #pngTitle {
+            position: absolute;
+            top: 60vh;
+            left: 25vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            z-index: 2;
+            margin-top: -2vh;
+          }
+          #dark {
+            width: 6vw;
+            animation: enterTitle 5.8s;
+          }
+          #dreams {
+            width: 12vw;
+            animation: enterTitle 6.8s;
+          }
       }
     </style>
   </head>
@@ -533,10 +517,10 @@
       </div>
       <div class="image">
         <img id="phone" class="flip-scale-up-hor" src="assets/phone.gif" />
-        <div class="title">
-        <h2>Dark</h2>
-        <h1>Dreams</h1>
-      </div>
+        <div id="pngTitle">
+          <img  id="dark" src="assets/dark.png" />
+          <img  id="dreams"  src="assets/dreams.png" />
+        </div>
       </div>
     </div>
     <div class="main">
@@ -567,8 +551,10 @@
           </div>
         </div>
         <a href="#goOn" class="press";>
-        <h2>Dark</h2>
-        <h1>Dreams</h1>
+          <div id="pngTitle">
+            <img  id="dark" src="assets/dark.png" />
+            <img  id="dreams"  src="assets/dreams.png" />
+          </div>
       </a>
       </div>
 
