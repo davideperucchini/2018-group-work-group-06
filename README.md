@@ -112,7 +112,8 @@ The first thing to do to proceed in the labyrinth is to **turn in the direction 
  
 To be able to go on, you then have to **tap on the screen**.
  
-When you get very close to an obstacle, however, **the cell phone vibrates**, trying to simulate the touch.
+When you get very close to an obstacle, however, **the cell phone vibrates**, trying to simulate the touch. 
+Because of restriction policy of iOS, we couldn’t implement the vibration for iPhones like we did for Android smartphones.
 
 ## Code challenges 
 
