@@ -8,7 +8,7 @@
 - [The project](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-project)
   * [The idea](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-idea)
   * [The research](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#the-research)
-  * [...]
+  * [Tone of voice](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#tone-of-voice)
 - [Design challenges](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#design-challenges)
   * [Architecture](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#architecture)
   * [Visuals](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#visuals)
