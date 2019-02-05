@@ -49,6 +49,13 @@ player= new Charachter()
     obstacle.set_orde()
 
 
+        if(dog.isPlaying()||noise.isPlaying()||dog.amp(3)){}
+        else{
+        dog.loop()
+        noise.loop()
+        dog.amp(3)}
+
+
 console.log(obstacle.sound)
 
 console.log(obstacle.magic_num)
@@ -59,7 +66,9 @@ console.log(obstacle.orde)
 
 function draw(){
 
-if(level<8){obstacle.update()
+if(level<8){
+
+  obstacle.update()
 
 if(frameCount%obstacle.magic_num[level]==0 && level==obstacle.norep[level]) {obstacle.sound[level].play()}
 if(player.x>obstacle.x-height/10&&player.x<obstacle.x+height/10){obstacle.sound[level].pan(0)}
@@ -91,7 +100,7 @@ noise.amp(map(level,0,7,0.1,0.5))
     //
     // ellipse(obstacle.x,obstacle.y,height/5,height/5)
     // ellipse(player.x,player.y,width/20,width/20)
-    //
+
     // text(goright[level],100,100)
     // text(alpha,100,200)
 
@@ -190,14 +199,17 @@ if(player.y<height/10){player.y=windowHeight,level++}
 else if (mouseIsPressed){this.y=this.y-1}}
 }
 
-function touchEnded() {
-  window.navigator.vibrate([0])
- window.addEventListener('deviceorientation', function(e)
-  {alpha = e.alpha;})
 
-  if(dog.isPlaying()||noise.isPlaying()||dog.amp(3)){}
-  else{
-  dog.loop()
-  noise.loop()
-  dog.amp(3)}
-}
+
+window.addEventListener('deviceorientation', function(e)
+{alpha = e.alpha;})
+
+function touchEnded() {if(mouseIsPressed){
+  window.navigator.vibrate([0])
+  //
+  // if(dog.isPlaying()||noise.isPlaying()||dog.amp(3)){}
+  // else{
+  // dog.loop()
+  // noise.loop()
+  // dog.amp(3)}}
+}}
