@@ -21,7 +21,6 @@
     - [Character](https://github.com/drawwithcode/2018-group-work-group-06#character)
     - [Obstacles](https://github.com/drawwithcode/2018-group-work-group-06#obstacles)
     - [Dog and direction](https://github.com/drawwithcode/2018-group-work-group-06#dog-and-direction)
-    - [Vibration](https://github.com/drawwithcode/2018-group-work-group-06#vibration)
 - [References](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#references)
 - [Credits](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#credits)
 - [Team members](https://github.com/drawwithcode/2018-group-work-group-06/blob/master/README.md#team-members)
@@ -528,11 +527,6 @@ window.addEventListener('deviceorientation', function(e){alpha = e.alpha;})
 ```
  
 Beta and gamma variables are also supported but we decided not to introduce them, as we noticed the three variables often influenced each other causing disorders during the experience.
-
-#### Vibration
-Because of restriction policy of iOS, we couldn’t implement the vibration for iPhones like we did for Android smartphones. 
-
-Instead, for iOS **we replaced the vibration with another sound**. In this way, there is a useful feedback and iPhone users can play the esperience.
 
 ## References 
 In addition to the research previously cited, images were collected as a reference point for the development of the visual part. Especially, the **blue and violet** color and the **simple lines** with few shades have been extracted.
